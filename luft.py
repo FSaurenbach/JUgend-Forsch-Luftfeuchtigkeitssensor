@@ -1,8 +1,8 @@
 import time  # Zeit modul um eine bestimmte Zeit den Code zu stoppen.
-import board  # Board modul von "adafruit_dht" um auf die RaspberryPi pins zuzugreifen.
+import board  # Board modul von "adafruit_dht" um auf die RaspberryPi Pins zuzugreifen.
 import adafruit_dht  # Modul "adafruit_dht" um auf die Luftfeuchtigkeitssensoren zuzugreifen.
 from datetime import \
-    datetime  # Zeit modul um auf die aktuelle Zeit in der Datenbank mit den Feuchtigkeitswerten abzuspeichern.
+    datetime  # Zeit modul um auf aktuelle Zeit in der Datenbank mit den Feuchtigkeitswerten abzuspeichern.
 
 sensor1 = adafruit_dht.DHT11(board.D23)  # Auf Sensor 1 zugreifen der an dem Pin 23 hängt.
 sensor2 = adafruit_dht.DHT11(board.D24)  # Auf Sensor 2 zugreifen der an dem Pin 24 hängt.
